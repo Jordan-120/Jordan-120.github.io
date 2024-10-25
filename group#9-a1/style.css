@@ -1,0 +1,88 @@
+body{
+    margin: 0px; 
+    background-color:burlywood
+}
+main{
+    margin: 20px; 
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(76, 75, 74);
+    padding: 0%;
+    margin: 0%;
+    overflow: hidden; 
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: aqua;
+}
+.navbar li{
+    float: left;
+}
+
+#background {
+    background-color: rgb(219, 145, 48)
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th {
+    background-color: rgb(219, 145, 48);
+    text-align: center; 
+    width: 100px 
+}
+
+td {
+    text-align: center;
+    width: 100px
+}
+
+tr:nth-child(2n-1)  {
+    background-color: rgb(62, 160, 62);
+    width:fit-content
+}
+
+tr:nth-child(2n-2)  {
+    background-color: rgb(90, 99, 199);
+    width:fit-content
+}
+header{    
+    background-color: orange;
+    text-align: center;
+    padding: 25px;
+}
+.container {
+    float:left;
+    position: relative;
+}
+#CTS{
+    float:inline-start;
+}
+#SS{
+    float: inline-start;
+}
+#SRT4{
+    float: inline-start;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
