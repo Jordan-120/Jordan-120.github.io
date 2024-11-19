@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan's Page</title>
+    <link rel="icon" type="image/jpeg" href="images/Favicon2.jpg">    <!-- Added a favicon for style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Best North American Tuners</h1> 
+    </header>
+
+    <!-- Navbar, now featuring Pagination (fixed >/< error issuie from last time)-->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">&lt;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="car1.html">Cadillac CTS-V</a></li>
+            <li><a href="car2.html">Dodge Neon SRT4</a></li>
+            <li><a href="car3.html">Chevy Cobalt SS</a></li>
+            <li><a href="car1.html">&gt;</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content, structured as an article with sections -->
+    <main> 
+        <article>
+            <img id="logo" src="images/logo.jpg" alt="logo" width="50"> <!-- Tiny Flexbox img, as requested -->
+            <h2>This site compares three American-made tuner cars</h2>
+            <section>
+                <h4>The tuner market has mainly been dominated by Europe and Japan, with major players like BMW and Subaru. America has never been a strong competitor in this market, but that doesn’t mean they haven’t tried. The U.S. produced a few competition-based tuners that won many awards and set lap times on the Nürburgring. The main three are the Cadillac CTS-V, Dodge Neon SRT4, and the Cobalt SS. We have links above that provide a brief description of each vehicle, along with stats and a summary of our opinion.</h4>
+            </section>
+            <section>
+                <h4>You can also send money for my car (featured on the Cobalt SS page) to <a href="mailto:jkgilbert@live.ca">jkgilbert@live.ca</a>, as I’m broke from car parts (e-transfers only).</h4>
+            </section>
+        </article>
+    
+        <!-- Flexbox Section -->
+        <section class="flexbox-section">
+            <h2>Tuner Pros</h2>
+            <div class="flexbox-container">
+                <div class="box">Improved Performance</div>
+                <div class="box">Used for Sport/Competition</div>
+                <div class="box">Unlimited Customization</div>
+                <div class="box">Strong Community</div>
+            </div>
+        </section>
+
+        <!-- Grid Section -->
+        <section class="grid-section">
+            <h2>Tuner Cons</h2>
+            <div class="grid-container">
+                <div class="grid-item">Increased Cost</div>
+                <div class="grid-item">More Maintenance</div>
+                <div class="grid-item">Voids Warranty</div>
+                <div class="grid-item">Reduced Fuel Economy</div>
+            </div>
+        </section>
+
+        <!-- Multi-column Section -->
+        <section class="multi-column-section">
+            <h2>What is a Tuner Car?</h2>
+            <div class="multi-column-container">
+                <p>Tuning a car means optimizing it for specific needs and requirements, such as occasional track performance, heavy-duty track use, fuel mileage, or drag strip performance. Some cars are tuned for low reliability but massive performance, while others are tuned for higher reliability and moderate performance. Some cars are tuned for straight-line speed and traction, while others are tuned for cornering and stiffness.</p>
+
+                <p>From the factory, everything about the car is tuned for "median" use—primarily, the ability to drive the car daily or regularly, with low vibration or harshness, and as few trips to the mechanic as possible. For the average person, there is usually no better performance than what the car offers in its OEM form.</p>
+                
+                <p>Engine tuning involves everything from basic performance modifications (such as intake or exhaust systems) and adjusting ECU calibrations to modifying the valvetrain, improving compression ratio, adding boost (air pressure), or injecting substances like nitrous, water, or methanol into the air-fuel mixture.</p>
+                
+                <p>Suspension tuning is a crucial part of the tuning process and can involve altering suspension settings, adding bracing, or even changing the geometry and configuration of the suspension altogether.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Image and Video section -->
+    <div class="media-container-index">
+        <img src="images/N4S.jpg" alt="NFS">
+        <video controls autoplay muted>
+            <source src="video/definetuner.mp4" type="video/mp4">
+        </video>
+    </div> 
+
+    <!-- Footer -->
+    <footer> A Jordan and Ryan production </footer> 
+
+</body>
+</html>

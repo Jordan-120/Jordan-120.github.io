@@ -1,0 +1,155 @@
+/* Ryan's StyleSheet */
+header {
+    position: sticky;            
+    top: 0;
+    background-color:  rgb(219, 145, 48);
+}
+
+img {
+    float: left;
+    margin-right: 15px;
+}
+/* this is for the flexbox*/
+body {
+    margin: 0px;
+    background-color: orange;
+}
+main {
+    margin: 30px;
+}
+
+ul {
+    background-color: rgb(84, 84, 248);
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    border: 2px;
+}
+
+.nav-item {
+    display: block; 
+    text-decoration: none; 
+    color: inherit;
+    height: 25px; 
+    width: 150px; 
+    border-radius: 15px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.nav-item:hover:not(.active){
+    background-color: red;
+}
+
+a{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%
+}
+/* end of flexbox*/
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+/* table */
+table, th, td {
+    border: 1px solid black;
+}
+
+th {
+    background-color: rgb(219, 145, 48);
+    text-align: left; 
+    width: 100px 
+}
+
+td {
+    text-align: center;
+    width: 100px
+}
+
+tr:nth-child(2n-1)  {
+    background-color: rgb(62, 160, 62);
+    width:fit-content
+}
+
+tr:nth-child(2n-2)  {
+    background-color: rgb(90, 99, 199);
+    width:fit-content
+}
+/* End of table*/
+/* this if for the grid / multi-col*/
+
+.multi-container {
+    column-count: 2;        
+    column-gap: 20px;       
+    width: 100%;
+    border: 5px solid black;
+    background: green;
+  }
+  
+  .main {
+    background-color: orange;
+    break-inside: avoid;
+    display: grid;
+    border: 5px solid black;
+    padding-bottom: 50px    
+  }
+  
+  .table {
+    padding-top: 27px;
+    padding-right: 50px;
+    display:table;
+    width: 100%;
+    max-width: 100%;               
+    height: 100%;     
+    overflow: auto;
+    border: none;
+    
+           
+  }
+  
+  img {
+    display: grid;
+    max-width: 100%;    
+    height: auto;
+    border: 5px solid black;
+  }
+  
+  
+  
+  th,td {
+    padding: 8px;
+    border: 1px white;
+  }
+
+  
+/* End of grid / multi-col*/
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    
+}
+
+
+
+
+
+
+     

@@ -1,0 +1,217 @@
+/* Jordan's StyleSheet */
+
+body {                                 /* Basic background to set the stage */
+    margin: 0px; 
+    background-color: burlywood;
+}
+
+main {
+    margin: 30px;                      /* used to space a the main article a bit */
+}
+
+header {
+    position: sticky;                  /* As requested*/
+    top: 0;
+    background-color:  rgb(219, 145, 48);
+
+}
+
+h1 {                                   /* Text details for just the header*/
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+h2 {                                    /* Text I used to declare each different elements */
+    text-align:left;
+    text-decoration: underline;
+    font-style: normal;
+    font-size: xx-large;
+}
+
+.navbar ul {                            /* navbar under the head*/
+    list-style-type: none;
+    background-color: rgb(76, 75, 74);
+    padding: 0;
+    margin: 0;
+    overflow: hidden; 
+}
+
+.navbar a {                             /* links elements in the navbar */
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover {                       /* Hover feature that changes background color to show what would be selected*/
+    background-color: aqua;
+}
+
+.navbar li {                            /* keeps navbar listed elements to stick to the left (think it looks better then center */
+    float: left;
+}
+
+#logo {                                 /* ID for the tiny Flexbox img as requested in the outline */
+    float: right;
+    margin-right: 15px;
+}
+
+#background {                           /*actual background color for the table, matched with elements in table so it blends*/
+    background-color: rgb(219, 145, 48);
+}
+
+table, th, td {                         /*table, table header and table data, bordered so it's easier to separate at a glance */
+    border: 1px solid black;
+}
+
+#table {                                /*Basic table layout, have overflow using auto to allow scrolling*/
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+}
+
+th {
+    background-color: rgb(219, 145, 48);
+    text-align: center; 
+    width: 100px;
+}
+
+td {
+    text-align: center;
+    width: 100px;
+}
+
+tr:nth-child(odd) {                     /* used this from previous class, had as 2n-1/2n-2, found out can just use odd or even */
+    background-color: rgb(62, 160, 62);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(90, 99, 199);
+}
+
+header {
+    background-color: orange;
+    text-align: center;
+    padding: 25px;
+}
+
+#SS {                                   /* This is just image, used cover to not stretch image */
+    grid-area: image;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+footer {                                /* Footer is fixed to stay with screen */
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.flexbox-section {                      /* General alignment for Flexbox*/
+    margin-bottom: 40px;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+}
+
+.flexbox-container {                    /* Have it as Flex to adjust, small gap to look nice */
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.box {                                  /* The individual boxes, had to play around till they felt right, width is based on container space */
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    width: 23%; 
+    text-align: center;
+    font-size: 1.5rem;
+    border-width: 0.25em;
+    border-radius: 20px;
+}
+
+.grid-section {                          /* General alignment for grid (based of what I used for flexbox to line up) */
+    margin-bottom: 40px;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+}
+
+.grid-container {                         /* was nightmare to figure out, but used grid with 4 columns */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+}
+
+.grid-item {                              /* lined up to look on par with flexbox */
+    background-color: #ff3c22;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-width: 0.25em;
+    border-radius: 20px;
+}
+
+.multi-column-section {
+    margin-bottom: 40px;
+}
+
+.multi-column-container {                  /* found out I just generally don't like columns, but sorted it out to look nice */
+    column-count: 2; 
+    column-gap: 20px; 
+    padding: 20px;
+    background-color: #2d9bd1;
+    border-color: #f3d24f;
+    border-width: 0.25em;
+    border-style: dashed;
+    border-radius: 20px;
+}
+
+.multi-column-container p {               /* what’s running in the multi-col */
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.media-container-index {                  /* Container takes 100%, then have the vid/img take 50% each, which runs after */
+    display: flex;
+    width: 100%; 
+    padding-bottom: 3em;
+}
+
+.media-container-index video {
+    width: 50%; 
+    height: auto; 
+}
+
+.media-container-index img {             /* Have float img, as requested */   
+    float: left;
+    width: 50%; 
+    height: auto; 
+}
+
+.media-container-ss {                     /* Have different media containers as this one has been adjusted to include grid table */
+    display: grid;
+    grid-template-areas: 
+        "image table"
+        "image video";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px; 
+    width: 100%;
+    height: 100vh;
+}
+
+video {
+    grid-area: video;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+} 

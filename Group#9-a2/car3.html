@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jordan's Page'</title>
+  <link rel="icon" type="image/jpeg" href="images/Favicon2.jpg"> <!-- Added a favicon for style -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Chevy Cobalt SS</h1> 
+  </header>
+
+  <!-- Navbar, now featuring Pagination (fixed >/< error issuie from last time)-->
+  <nav class="navbar">
+    <ul>
+      <li><a href="car2.html">&lt;</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="car1.html">Cadillac CTS-V</a></li>
+      <li><a href="car2.html">Dodge Neon SRT4</a></li> 
+      <li><a href="car3.html">Chevy Cobalt SS</a></li>
+      <li><a href="car3.html">&gt;</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main content, structured as an article with sections -->
+  <main>
+    <article>
+      <img id="logo" src="images/logo.jpg" alt="logo" width="50"> <!-- Tiny Flexbox img, as requested -->
+        <h2>Chevy Cobalt SS 2004-2011</h2>
+      <section>
+        <h4>The Cobalt SS was made between 2004 and 2011. From 2005 to 2007, they came supercharged. The car was equipped with many high-performance parts while keeping a low cost of around $40k USD. This included Recaro seats, a boost gauge, and a limited-slip differential. They were so well made that they held the fastest time on the Nürburgring in the front-wheel-drive category for three years. In 2008, they made many upgrades. The main upgrade was switching from a supercharger to a turbo. The engine was also swapped from an LSJ to an LNF. Other major upgrades included Brembo brakes, F35 suspension, launch control, no-lift shift, and a heads-up display called an RDP.</h4>
+      </section>
+      <section>
+        <h4>SUMMARY: The best American-made tuner because I own one. Many features that would normally cost thousands as upgrades were included as stock. The engine and body were incredibly durable, and many are still seen on the road today. With its low cost and minimal maintenance, it was our clear choice.</h4>
+      </section>
+    </article>
+  </main>
+
+  <!-- Img, Table then video, wrapped ever so elagently in container-->
+  <div class="media-container-ss">
+    <img id="SS" src="images/CobaltSS.jpg" alt="Cobalt SS" width="500">
+    <table id="table">
+      <thead>
+        <tr>
+          <td id="background">&nbsp;</td>
+          <th>2004-2005</th>
+          <th>2005-2007</th>
+          <th>2008-2011</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Cylinders</th>
+          <td>I4</td>
+          <td>L4</td>
+          <td>L4</td>
+        </tr>
+        <tr>
+          <th>Engine</th>
+          <td>2.2 N/A</td>
+          <td>2.0 SC</td>
+          <td>2.0 TC</td>
+        </tr>
+        <tr>
+          <th>Horsepower</th>
+          <td>173</td>
+          <td>207</td>
+          <td>264</td>
+        </tr>
+        <tr>
+          <th>Torque</th>
+          <td>163</td>
+          <td>200</td>
+          <td>260</td>
+        </tr>
+        <tr>
+          <th>Top Speed</th>
+          <td>200 km/h</td>
+          <td>221 km/h</td>
+          <td>257 km/h</td>
+        </tr>
+        <tr>
+          <th>0-60</th>
+          <td>7.6 sec</td>
+          <td>7 sec</td>
+          <td>6.2 sec</td>
+        </tr>
+        <tr>
+          <th>Drivetrain</th>
+          <td>FWD</td>
+          <td>FWD</td>
+          <td>FWD</td>
+        </tr>
+        <tr>
+          <th>Gearbox</th>
+          <td>6 Speed Auto</td>
+          <td>5 Speed Manual</td>
+          <td>5 Speed Manual</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <video width="500" controls autoplay muted>
+      <source src="video/cobalt.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Flexbox Section -->
+  <section class="flexbox-section">
+    <h2>Notable Pros</h2>
+    <div class="flexbox-container">
+      <div class="box">Amazing Fuel Economy</div>
+      <div class="box">High-Performance Parts</div>
+      <div class="box">Highly Customizable</div>
+      <div class="box">Low Cost/Maintenance</div>
+    </div>
+  </section>
+      
+  <!-- Grid Section -->
+  <section class="grid-section">
+    <h2>Notable Cons</h2>
+    <div class="grid-container">
+      <div class="grid-item">Well-maintained ones are rare</div>
+      <div class="grid-item">Performance version based</div>
+      <div class="grid-item">Not a comfortable backseat</div>
+      <div class="grid-item">Interior is underwhelming</div>
+    </div>
+  </section><br>  
+      
+  <!-- Multi-column Section -->
+  <section class="multi-column-section">
+    <h2>Different Versions</h2>
+    <div class="multi-column-container">
+      <p>There are 5 models with 3 different versions for the SS. The Cobalt comes in Basic, LT, LS, Sport, and SS. We will focus on the SS, also known as the Super Sport.</p>
+      
+      <p>The SS from 2004-2005 is naturally aspirated. It only came in automatic and mainly had an upgraded LNF engine compared to the basic models.</p>
+      
+      <p>The SS from 2005-2007 is where they made significant improvements. These models came with a supercharged LNF engine, which included a boost gauge and the option for a limited-slip differential. They also came with Stage 1 or 2 ECU upgrades from the factory.</p>
+      
+      <p>The SS from 2007-2010 is the most sought-after. After the contract ended with Roush for the supercharger, they switched to a turbocharger. This change provided better fuel economy and more horsepower. The brakes were upgraded to Brembo, and the suspension was upgraded to the F35 racing suspension. You could also get a Stage 1 tune and a multi-gauge display as optional upgrades from the dealer. Like the supercharged version, you could also upgrade to a limited-slip differential, which was standard in the 2008-2010 Canadian versions.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer> A Jordan and Ryan production </footer> 
+
+</body>
+</html>
